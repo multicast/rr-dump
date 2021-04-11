@@ -13,6 +13,5 @@ echo RRMODPULL=$RRMODPULL
 
 echo '# Clone order according to ' $RRCONF_REPOS
 for repo in $(run-parts --list $RRCONF_REPOS); do
-  repourl=$(<$repo)MODULE.git
-  echo $reporul
+  echo $(<$repo)MODULE.git
 done
